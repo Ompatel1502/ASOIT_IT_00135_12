@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+  $("#fade").click(function(){
+    $(".om").fadeToggle();
+  });
+});
+</script>
+
+
+</head>
+<body>
+    
+    <h1>Jati reje!!!!</h1>
+    <p class="om">click me away!</p>
+    <p class="om">click me toooo!</p>
+    <button id="fade">click me</button>
+
+
+
+    <script>$(document).ready(function(){
+      $("#color").click(function(){ 
+        $("tr:even").css("background-color", "yellow");
+      });
+
+      $("#color").dblclick(function(){ 
+        $("tr:odd").css("background-color", "red");
+      });
+      });</script>
+               
+        <style>
+            .trans{
+                transition: 3.5s ease-in-out;
+            }
+        </style>
+
+
+
+    <table border="1">
+        <tr class="trans">
+          <th>Company</th>
+          <th>Country</th>
+        </tr>
+        <tr class="trans">
+          <td>ibm</td>
+          <td>Germany</td>
+        </tr>
+        <tr class="trans">
+          <td>nokia</td>
+          <td>Sweden</td>
+        </tr>
+        <tr class="trans">
+          <td>tao bell</td>
+          <td>Mexico</td>
+        </tr>
+        <tr class="trans">
+          <td>LG</td>
+          <td>Austria</td>
+        </tr>
+        <tr class="trans">
+          <td>Farari</td>
+          <td>UK</td>
+        </tr>
+      </table>
+      <button id="color"> click here</button>
+</body>
+</html>
